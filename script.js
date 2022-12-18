@@ -18,6 +18,33 @@ function getComputerChoice(){
     return computerChoices[choice];
 }
 
+//Create a play Function to accept and process user and computer choices
+function play(userChoice){
+    const computerChoice = getComputerChoice();
+    const userTag = "User".fontsize(3).sub();
+    const computerTag = "Comp".fontsize(3).sub();
+    switch (userChoice + computerChoice){
+        case "paperrock":
+        case "rockscissors":
+        case "scissorspaper":
+            result_p.innerHTML = `${userChoice}${userTag} Beats ${computerTag}${computerChoice}.. You Won This Round!🏆🏆`;
+            break;
+
+        case "rockpaper":
+        case "scissorsrock":
+        case "paperscissors":
+            result_p.innerHTML = `${computerChoice}.${computerTag} Beats ${userTag}${userChoice}. You Lose This Round!😒😒`;
+            break;
+
+        case "rockrock":
+        case "scissorsscissors":
+        case "paperpaper":
+            result_p.innerHTML = `${userChoice}${userTag} Equals ${computerTag}${computerChoice}..This Round is a Tie!😕😕`;
+            tie();
+            break; 
+    }
+}
+
 //Create a playGame function to accept and generate a user choice
 function playGame (){
     paperMove_div.addEventListener("click", function(){
