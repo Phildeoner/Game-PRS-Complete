@@ -64,3 +64,18 @@ h3 {
     border-radius: 5px;
     box-shadow: 0 0 15px rgb(22, 17, 7);
 }
+
+.player {
+    background: rgb(58, 75, 172);;
+    color: white;
+    font-size: 20px;
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+#user {
+    position: absolute;
+    top: 22px;
+    left: -40px;
+}
