@@ -85,3 +85,39 @@ h3 {
     top: 22px;
     right: -45px;
 }
+
+.result {
+    font-size: 30px;
+}
+.result p{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.moves img {
+    width: 100px;
+}
+
+.moves {
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 25px;
+    
+}
+.move{
+    display: inline-block;
+    margin: 0 10px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    padding: 2px;
+}
+
+.move img:hover {
+    cursor: pointer;
+    background: rgb(58, 75, 172);;
+    margin: 0 10px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    padding: 5px;
+}
