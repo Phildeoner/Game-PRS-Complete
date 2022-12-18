@@ -10,3 +10,10 @@ const paperMove_div = document.getElementById("paper");
 const rockMove_div = document.getElementById("rock");
 const scissorsMove_div = document.getElementById("scissors");
 const yourMove_p = document.getElementById("instruction");
+
+//Create a getComputerChoice function to get computer choice
+function getComputerChoice(){
+    const computerChoices = ["paper", "rock", "scissors"];
+    const choice = Math.floor(Math.random() * 3);
+    return computerChoices[choice];
+}
