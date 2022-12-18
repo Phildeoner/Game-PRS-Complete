@@ -24,3 +24,9 @@ header {
     padding: 10px;
     border-radius: 30px;
 }
+
+h1 {
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+}
