@@ -55,6 +55,8 @@ function play(userChoice){
         case "scissorspaper":
             result_p.innerHTML = `${userChoice}${userTag} Beats ${computerTag}${computerChoice}.. You Won This Round!🏆🏆`;
             win();
+            document.getElementById(userChoice).classList.add("greenGlow");
+            setTimeout(function(){document.getElementById(userChoice).classList.remove("greenGlow")}, 400);
             break;
 
         case "rockpaper":
@@ -62,6 +64,8 @@ function play(userChoice){
         case "paperscissors":
             result_p.innerHTML = `${computerChoice}.${computerTag} Beats ${userTag}${userChoice}. You Lose This Round!😒😒`;
             lose();
+            document.getElementById(userChoice).classList.add("redGlow");
+            setTimeout(function(){document.getElementById(userChoice).classList.remove("redGlow")}, 400);
             break;
 
         case "rockrock":
@@ -69,6 +73,8 @@ function play(userChoice){
         case "paperpaper":
             result_p.innerHTML = `${userChoice}${userTag} Equals ${computerTag}${computerChoice}..This Round is a Tie!😕😕`;
             tie();
+            document.getElementById(userChoice).classList.add("yellowGlow");
+            setTimeout(function(){document.getElementById(userChoice).classList.remove("yellowGlow")}, 300);
             break; 
     }
 }
