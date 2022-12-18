@@ -18,6 +18,32 @@ function getComputerChoice(){
     return computerChoices[choice];
 }
 
+//Create a win function to update scores and round
+function win(){
+    userScore++;
+    round++;
+    gameRound_span.innerHTML = round;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+}
+
+//Create a lose function to update scores and round
+function lose(){
+    computerScore++;
+    round++;
+    gameRound_span.innerHTML = round;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;    
+}
+
+//Create a tie function to update scores and round
+function tie(){
+    round++;
+    gameRound_span.innerHTML = round;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;   
+}
+
 //Create a play Function to accept and process user and computer choices
 function play(userChoice){
     const computerChoice = getComputerChoice();
