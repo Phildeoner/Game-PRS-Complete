@@ -13,7 +13,7 @@ const yourMove_p = document.getElementById("instruction");
 
 //Create a getComputerChoice function to get computer choice
 function getComputerChoice(){
-    const computerChoices = ["paper", "rock", "scissors"];
+    const computerChoices = ["Paper", "Rock", "Scissors"];
     const choice = Math.floor(Math.random() * 3);
     return computerChoices[choice];
 }
@@ -50,27 +50,27 @@ function play(userChoice){
     const userTag = "User".fontsize(3).sub();
     const computerTag = "Comp".fontsize(3).sub();
     switch (userChoice + computerChoice){
-        case "paperrock":
-        case "rockscissors":
-        case "scissorspaper":
+        case "PaperRock":
+        case "RockScissors":
+        case "ScissorsPaper":
             result_p.innerHTML = `${userChoice}${userTag} Beats ${computerTag}${computerChoice}.. You Won This Round!🏆🏆`;
             win();
             document.getElementById(userChoice).classList.add("greenGlow");
             setTimeout(function(){document.getElementById(userChoice).classList.remove("greenGlow")}, 400);
             break;
 
-        case "rockpaper":
-        case "scissorsrock":
-        case "paperscissors":
+        case "RockPaper":
+        case "ScissorsRock":
+        case "PaperScissors":
             result_p.innerHTML = `${computerChoice}.${computerTag} Beats ${userTag}${userChoice}. You Lose This Round!😒😒`;
             lose();
             document.getElementById(userChoice).classList.add("redGlow");
             setTimeout(function(){document.getElementById(userChoice).classList.remove("redGlow")}, 400);
             break;
 
-        case "rockrock":
-        case "scissorsscissors":
-        case "paperpaper":
+        case "RockRock":
+        case "ScissorsScissors":
+        case "PaperPaper":
             result_p.innerHTML = `${userChoice}${userTag} Equals ${computerTag}${computerChoice}..This Round is a Tie!😕😕`;
             tie();
             document.getElementById(userChoice).classList.add("yellowGlow");
@@ -82,17 +82,17 @@ function play(userChoice){
 //Create a playGame function to accept and generate a user choice
 function playGame (){
     paperMove_div.addEventListener("click", function(){
-        play("paper");
+        play("Paper");
         yourMove_p.innerHTML = `Your Last Move Was Paper 🖐️`;
     })
 
     rockMove_div.addEventListener("click", function(){
-        play("rock");
+        play("Rock");
         yourMove_p.innerHTML = `Your Last Move Was Rock ✊`;
     })
 
     scissorsMove_div.addEventListener("click", function(){
-        play("scissors");
+        play("Scissors");
         yourMove_p.innerHTML = `Your Last Move Was Scissors ✌️`;
     })
 }
