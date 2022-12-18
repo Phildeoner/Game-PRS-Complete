@@ -17,3 +17,23 @@ function getComputerChoice(){
     const choice = Math.floor(Math.random() * 3);
     return computerChoices[choice];
 }
+
+//Create a playGame function to accept and generate a user choice
+function playGame (){
+    paperMove_div.addEventListener("click", function(){
+        play("paper");
+        yourMove_p.innerHTML = `Your Last Move Was Paper 🖐️`;
+    })
+
+    rockMove_div.addEventListener("click", function(){
+        play("rock");
+        yourMove_p.innerHTML = `Your Last Move Was Rock ✊`;
+    })
+
+    scissorsMove_div.addEventListener("click", function(){
+        play("scissors");
+        yourMove_p.innerHTML = `Your Last Move Was Scissors ✌️`;
+    })
+}
+
+playGame();
