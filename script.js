@@ -54,12 +54,14 @@ function play(userChoice){
         case "rockscissors":
         case "scissorspaper":
             result_p.innerHTML = `${userChoice}${userTag} Beats ${computerTag}${computerChoice}.. You Won This Round!🏆🏆`;
+            win();
             break;
 
         case "rockpaper":
         case "scissorsrock":
         case "paperscissors":
             result_p.innerHTML = `${computerChoice}.${computerTag} Beats ${userTag}${userChoice}. You Lose This Round!😒😒`;
+            lose();
             break;
 
         case "rockrock":
