@@ -4,11 +4,10 @@ let round = 1;
 const gameRound_span = document.getElementById("round");
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
-const round_span = document.getElementById("round");
 const result_p = document.getElementById("result");
-const paperMove_div = document.getElementById("paper");
-const rockMove_div = document.getElementById("rock");
-const scissorsMove_div = document.getElementById("scissors");
+const paperMove_div = document.getElementById("Paper");
+const rockMove_div = document.getElementById("Rock");
+const scissorsMove_div = document.getElementById("Scissors");
 const yourMove_p = document.getElementById("instruction");
 
 //Create a getComputerChoice function to get computer choice
@@ -80,7 +79,7 @@ function play(userChoice){
 }
 
 //Create a playGame function to accept and generate a user choice
-function playGame (){
+function playGame(){
     paperMove_div.addEventListener("click", function(){
         play("Paper");
         yourMove_p.innerHTML = `Your Last Move Was Paper 🖐️`;
