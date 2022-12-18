@@ -9,3 +9,10 @@ body {
     border: 5px solid rgb(58, 75, 172);
     height: 100vh;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(58, 75, 172);;
+}
