@@ -121,3 +121,15 @@ h3 {
     transition: all 0.3s ease;
     padding: 5px;
 }
+
+#instruction{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+}
+
+figcaption {
+    font-weight: bold;
+    text-align: center;
+}
