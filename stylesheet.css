@@ -3,3 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: rgb(247, 219, 182);
+    border: 5px solid rgb(58, 75, 172);
+    height: 100vh;
+}
