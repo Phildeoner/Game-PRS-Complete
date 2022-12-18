@@ -30,3 +30,15 @@ h1 {
     font-size: 35px;
     color: white;
 }
+
+h3 {
+    text-align: center;
+    border: 3px solid black;
+    margin: auto;
+    width: fit-content;
+    margin-top: 15px;
+    background: rgb(58, 75, 172);
+    border-radius: 5px;
+    color: white;
+    padding: 0 5px;
+}
