@@ -79,3 +79,9 @@ h3 {
     top: 22px;
     left: -40px;
 }
+
+#computer {
+    position: absolute;
+    top: 22px;
+    right: -45px;
+}
