@@ -16,3 +16,11 @@ header {
     justify-content: center;
     background: rgb(58, 75, 172);;
 }
+
+.logo {
+    width: 80px;
+    margin: 10px;
+    border: 3px solid white;
+    padding: 10px;
+    border-radius: 30px;
+}
